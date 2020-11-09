@@ -140,16 +140,16 @@ inquirer
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 jumbotron mb-3 team-heading">
+            <div class="col-12 jumbotron mb-3 team-heading shadow-sm bg-white rounded">
                 <h1 class="text-center">Terbo Team</h1>
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row">
-            <div class="team-area col-12 d-flex justify-content-center">
+            <div class="team-area col-12 d-md-flex justify-content-center">
                 
-<div class="card employee-card">
+<div class="card employee-card shadow-sm bg-white rounded">
     <div class="card-header">
         <h2 class="card-title">${response.managerName}</h2>
         <h3 class="card-title"><i class="fas fa-mug-hot mr-2"></i>Manager</h3>
@@ -163,7 +163,7 @@ inquirer
     </div>
 </div>
 
-<div class="card employee-card">
+<div class="card employee-card shadow-sm bg-white rounded">
     <div class="card-header">
         <h2 class="card-title" id="engineer-name">${response.engineer1Name}</h2>
         <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>Engineer</h3>
@@ -178,7 +178,7 @@ inquirer
     </div>
 </div>
 
-<div class="card employee-card">
+<div class="card employee-card shadow-sm bg-white rounded">
     <div class="card-header">
         <h2 class="card-title" id="engineer-name">${response.engineer2Name}</h2>
         <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>Engineer</h3>
@@ -193,7 +193,7 @@ inquirer
     </div>
 </div>
 
-<div class="card employee-card">
+<div class="card employee-card shadow-sm bg-white rounded">
     <div class="card-header">
         <h2 class="card-title" id="engineer-name">${response.engineer3Name}</h2>
         <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>Engineer</h3>
@@ -208,7 +208,7 @@ inquirer
     </div>
 </div>
 
-<div class="card employee-card">
+<div class="card employee-card shadow-sm bg-white rounded">
     <div class="card-header">
         <h2 class="card-title">${response.internName}</h2>
         <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i>Intern</h3>
