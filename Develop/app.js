@@ -18,33 +18,150 @@ inquirer
     .prompt([
         {
             type: "input",
-            message: "What is your name?",
+            message: "What is your manager's name?",
+            name: "managerName"
+        },
+        {
+            type: "input",
+            message: "What is your manager's id?",
+            name: "managerId"
+        },
+        {
+            type: "input",
+            message: "What is your manager's email?",
+            name: "managerEmail"
+        },
+        {
+            type: "input",
+            message: "What is your manager's phone number?",
+            name: "managerPhone"
+        },
+        {
+            type: "input",
+            message: "What is your engineer's name?",
             name: "engineerName"
         },
         {
             type: "input",
-            message: "What is your email address?",
-            name: "engineerEmail"
-        },
-        {
-            type: "input",
-            message: "What is your id?",
+            message: "What is your engineer's id?",
             name: "engineerId"
         },
         {
             type: "input",
-            message: "What is your github username?",
+            message: "What is your engineer's email?",
+            name: "engineerEmail"
+        },
+        {
+            type: "input",
+            message: "What is your engineer's github username?",
             name: "engineerGithub"
         },
-    ]).then((response) => {
-        // userInput.push(response)
-        // console.log(userInput)
+        {
+            type: "input",
+            message: "What is your intern's name?",
+            name: "internName"
+        },
+        {
+            type: "input",
+            message: "What is your intern's id?",
+            name: "internId"
+        },
+        {
+            type: "input",
+            message: "What is your intern's email?",
+            name: "internEmail"
+        },
+        {
+            type: "input",
+            message: "What is your intern's school?",
+            name: "internSchool"
+        }
+    ])
+    .then((response) => {
 
 
-        var renderHtml = render([response])
-        console.log('renderHtml:', renderHtml)
+
+        let renderHtml = `
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Team</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c502137733.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 jumbotron mb-3 team-heading">
+                <h1 class="text-center">My Team</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="team-area col-12 d-flex justify-content-center">
+                
+<div class="card employee-card">
+    <div class="card-header">
+        <h2 class="card-title">${response.managerName}</h2>
+        <h3 class="card-title"><i class="fas fa-mug-hot mr-2"></i>Manager</h3>
+    </div>
+    <div class="card-body">
+        <ul class="list-group">
+            <li class="list-group-item">ID: ${response.managerId}</li>
+            <li class="list-group-item">Email: <a href="mailto:${response.managerEmail}">${response.managerEmail}</a></li>
+            <li class="list-group-item">Office number: ${response.managerPhone}</li>
+        </ul>
+    </div>
+</div>
+
+<div class="card employee-card">
+    <div class="card-header">
+        <h2 class="card-title" id="engineer-name">${response.engineerName}</h2>
+        <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>Engineer</h3>
+    </div>
+    <div class="card-body">
+        <ul class="list-group">
+            <li class="list-group-item" id="engineer-id">ID: ${response.engineerId}</li>
+            <li class="list-group-item" id="engineer-email">Email: <a href="mailto:${response.engineerEmail}">${response.engineerEmail}</a></li>
+            <li class="list-group-item" id="engineer-github">GitHub: <a href="https://github.com/${response.engineerGithub}"
+                    target="_blank" rel="noopener noreferrer">${response.engineerGithub}</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="card employee-card">
+    <div class="card-header">
+        <h2 class="card-title">${response.internName}</h2>
+        <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i>Intern</h3>
+    </div>
+    <div class="card-body">
+        <ul class="list-group">
+            <li class="list-group-item">ID: ${response.internId}</li>
+            <li class="list-group-item">Email: <a href="mailto:${response.internEmail}">${response.internEmail}</a></li>
+            <li class="list-group-item">School: ${response.internSchool}</li>
+        </ul>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
 
 
+
+
+        `
 
         fs.writeFile('team.html', renderHtml, err => {
             if (err) {
@@ -52,6 +169,22 @@ inquirer
             }
         })
     })
+
+
+
+    //     // userInput.push(response)
+    //     // console.log(userInput)
+
+    //     var renderHtml = render([response])
+    //     console.log('renderHtml:', renderHtml)
+
+
+    //     fs.writeFile('team.html', renderHtml, err => {
+    //         if (err) {
+    //             throw err;
+    //         }
+    //     })
+    // })
 
 
 // After the user has input all employees desired, call the `render` function (required
