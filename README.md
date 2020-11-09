@@ -27,8 +27,7 @@ This application was developed using:
 
 View the repository at: https://github.com/MichaelWitt/Terbo-Team
 
-<!-- Preview: ![Screenshot](Preview.png)
-Demo: ![Screenshot](Demo.png) -->
+Preview: ![Screenshot](./Terbo-Team-Preview.png)
 
 ## Updates
 
@@ -39,6 +38,8 @@ https://github.com/MichaelWitt/Terbo-Team/commits/
 ## Credits
 
 UNC Coding Bootcamp And Trilogy for the inspiration! 
+
+Photo by Scott Webb @scottwebb from Unsplash.
 
 Thanks! 
 
