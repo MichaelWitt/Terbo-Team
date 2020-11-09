@@ -27,7 +27,7 @@ This application was developed using:
 
 View the repository at: https://github.com/MichaelWitt/Terbo-Team
 
-Preview: ![Screenshot](./Terbo-Team-Preview.png)
+Preview: ![Screenshot](./Assets/Terbo-Team-Preview.png)
 
 ## Updates
 
