@@ -1,0 +1,21 @@
+body {
+    background-image: url("./scott-webb-ywuH99ygfec-unsplash.jpg");
+    background-color: #ffffff;
+}
+
+.jumbotron {
+    background-color: #ffffff;
+
+}
+
+.card-header {
+    background-color: #ffffff;
+}
+
+.card {
+margin-right: 10px;
+margin-top: 10px;
+}
+
+
+
