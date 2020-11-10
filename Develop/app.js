@@ -116,8 +116,6 @@ inquirer
     ])
     .then((response) => {
 
-
-
         let renderHtml = `
 
 <!DOCTYPE html>
