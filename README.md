@@ -17,9 +17,9 @@ Intro Video:
 
 Instructions:
 
-1. 
-2.
-3.
+1. Download the repository package, open in vs code, and install the dependencies.
+2. In the terminal, type in node app.js and answer your team questions appropriately.
+3. Once finished, a team.html page should be generated with all of your team's information, enjoy! 
 
 ## Build Details
 
