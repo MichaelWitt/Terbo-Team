@@ -5,7 +5,7 @@ An application that displays profile information about your code team, Terbo Tea
 
 Welcome to Terbo-Team! 
 
-Project Info
+Terbo-Team was created to help you display information about you and your code team! Your code team will help you get through the challenges in life, and should be displayed proudly for everyone to see, as buddies for life! Simply enter the required information for your team, and it will be displayed in a rapidly generated html file. Give it a shot! 
 
 Thanks for stopping in! I look forward to working together to make the present and future a better place.
 
@@ -21,7 +21,7 @@ Instructions:
 
 ## Build Details
 
-This application was developed using:
+This application was developed using: Node.js, Inquirer, JavaScript, Testing, HTML, CSS, and more! 
 
 ## Repository & Preview
 
@@ -39,7 +39,7 @@ https://github.com/MichaelWitt/Terbo-Team/commits/
 
 UNC Coding Bootcamp And Trilogy for the inspiration! 
 
-Photo by Scott Webb @scottwebb from Unsplash.
+Background photo by Scott Webb @scottwebb from Unsplash.
 
 Thanks! 
 
