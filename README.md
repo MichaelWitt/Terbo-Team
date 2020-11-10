@@ -13,7 +13,7 @@ Thanks for stopping in! I look forward to working together to make the present a
 
 Intro Video: https://youtu.be/2O2ftBC3l0E
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/https://youtu.be/2O2ftBC3l0E/0.jpg)](https://youtu.be/2O2ftBC3l0E)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/youtu.be/2O2ftBC3l0E/0.jpg)](https://youtu.be/2O2ftBC3l0E)
 
 Instructions:
 
